@@ -13,6 +13,7 @@ import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 import com.tr8n.core.Session;
 import com.tr8n.core.Tr8n;
+import com.tr8n.j2ee.utils.SecurityUtils;
 
 public class Tr8nInterceptor extends AbstractInterceptor {
   private static final long serialVersionUID = 5065298925572763728L;
@@ -36,7 +37,7 @@ public class Tr8nInterceptor extends AbstractInterceptor {
 	    try {
 	    	tr8nSession = new Session();
 		    request.setAttribute("tr8n", tr8nSession);
-		    tr8nSession.init(getSessionCookie(tr8nSession.getApplication().getKey(), request));
+		    tr8nSession.init(SecurityUtils.decodeAndVerify(getSessionCookie(tr8nSession.getApplication().getKey(), request), tr8nSession.getApplication().getSecret()));
 		    tr8nSession.setCurrentSource(request.getRequestURI().toString());
 		    
 	    	return invocation.invoke();
