@@ -1,13 +1,11 @@
 <p align="center">
-  <img src="https://raw.github.com/tr8n/tr8n/master/doc/screenshots/tr8nlogo.png">
+  <img src="https://avatars0.githubusercontent.com/u/1316274?v=3&s=200">
 </p>
 
-Tr8n Client SDK for Java Struts 2.
+TML Client SDK for Java Struts 2.
 ===
 
-[![Project status](http://stillmaintained.com/tr8n/tr8n_android_clientsdk.png)](http://stillmaintained.com/tr8n/tr8n_android_clientsdk.png)
-
-Tr8n Client SDK for Java Struts 2 provides extensions for building web based applications using Struts 2 framework.
+TML SDK for Java Struts 2 provides extensions for building web based applications using Struts 2 framework.
 
 Installation
 ==================
@@ -18,9 +16,9 @@ Add the following dependency to your pom.xml:
 
 ```xml
 <dependency>
-  <groupId>com.tr8nhub</groupId>
-  <artifactId>struts2-clientsdk</artifactId>
-  <version>0.1.0</version>
+  <groupId>com.translationexchange</groupId>
+  <artifactId>tml-struts2</artifactId>
+  <version>0.2.1</version>
 </dependency>
 ```
 
@@ -30,23 +28,42 @@ Sample Applications
 
 The best way to get started with Tr8n is to see it in action. A number of sample applications are available for you to see how the SDK can be integrated and used:
 
-* Welp web app: [tr8n_samples_welp_struts2](https://github.com/tr8n/tr8n_samples_welp_struts2)
+* Welp web app: [tml-java-j2ee-struts2-samples-welp](https://github.com/translationexchange/tml-java-j2ee-struts2-samples-welp)
 
 
-Where can I get more information?
+Links
 ==================
 
-* Register on Tr8nHub.com: https://tr8nhub.com
+* Register on TranslationExchange.com: http://translationexchange.com
 
-* Read Tr8nHub's documentation: http://wiki.tr8nhub.com
+* Follow TranslationExchange on Twitter: https://twitter.com/translationx
 
-* Visit Tr8nHub's blog: http://blog.tr8nhub.com
+* Connect with TranslationExchange on Facebook: https://www.facebook.com/translationexchange
 
-* Follow Tr8nHub on Twitter: https://twitter.com/Tr8nHub
-
-* Connect with Tr8nHub on Facebook: https://www.facebook.com/pages/tr8nhubcom/138407706218622
-
-* If you have any questions or suggestions, contact us: feedback@tr8nhub.com
+* If you have any questions or suggestions, contact us: support@translationexchange.com
 
 
+Copyright and license
+==================
+
+Copyright (c) 2015 Translation Exchange, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 

@@ -19,7 +19,7 @@
  * under the License.
  */
 
-package com.tr8n.struts2.actions;
+package com.translationexchange.struts2.actions;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -28,12 +28,13 @@ import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.ServletResponseAware;
 
 import com.opensymphony.xwork2.ActionSupport;
-import com.tr8n.core.Session;
+import com.translationexchange.core.Session;
+import com.translationexchange.j2ee.servlets.LocalizedServlet;
 
 /**
  * Base Action class for the Tutorial package.
  */
-public class Tr8nAction extends ActionSupport implements ServletRequestAware, ServletResponseAware {
+public class LocalizedAction extends ActionSupport implements ServletRequestAware, ServletResponseAware {
 	private static final long serialVersionUID = 1L;
 	
 	protected HttpServletRequest request;
@@ -47,8 +48,8 @@ public class Tr8nAction extends ActionSupport implements ServletRequestAware, Se
         this.response = response;
     }	 
 
-    protected Session getTr8n() {
-		return (Session) request.getAttribute("tr8n");
+    protected Session getTml() {
+		return (Session) request.getAttribute(LocalizedServlet.TML_SESSION_KEY);
 	}
 	
 }

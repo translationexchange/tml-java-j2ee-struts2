@@ -2,25 +2,25 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.tr8nhub</groupId>
-	<artifactId>struts2-clientsdk</artifactId>
-	<version>0.1.0</version>
+	<groupId>com.translationexchange</groupId>
+	<artifactId>tml-struts2</artifactId>
+	<version>0.2.1</version>
 	<packaging>jar</packaging>
 
-	<name>tr8n-struts2-clientsdk</name>
-	<description>Tr8n SDK for J2EE Struts 2</description>
-	<url>https://github.com/tr8n/tr8n_struts2_clientsdk</url>
-	<inceptionYear>2014</inceptionYear>
+	<name>tml-struts2</name>
+	<description>TML for J2EE Struts 2</description>
+	<url>https://github.com/translationexchange/tml-java-j2ee-struts2</url>
+	<inceptionYear>2015</inceptionYear>
 
 	<organization>
-		<name>Tr8nHub</name>
-		<url>https://tr8nhub.com</url>
+		<name>Translation Exchange, Inc.</name>
+		<url>http://translationexchange.com</url>
 	</organization>
 
 	<developers>
 		<developer>
 			<name>Michael Berkovich</name>
-			<email>michael@tr8nhub.com</email>
+			<email>michael@translationexchange.com</email>
 		</developer>
 	</developers>
 
@@ -46,9 +46,9 @@
   </distributionManagement>
     
 	<scm>
-		<connection>scm:git:git://github.com/tr8n/tr8n_struts2_clientsdk.git</connection>
-		<developerConnection>scm:git:git://github.com/tr8n/tr8n_struts2_clientsdk.git</developerConnection>
-		<url>https://github.com/tr8n/tr8n_struts2_clientsdk</url>
+		<connection>scm:git:git://github.com/translationexchange/tml-java-j2ee-struts2.git</connection>
+		<developerConnection>scm:git:git://github.com/translationexchange/tml-java-j2ee-struts2.git</developerConnection>
+		<url>https://github.com/translationexchange/tml-java-j2ee-struts2</url>
 	</scm>
 
 	<properties>
@@ -57,9 +57,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.tr8nhub</groupId>
-			<artifactId>j2ee-clientsdk</artifactId>
-			<version>0.1.0</version>
+			<groupId>com.translationexchange</groupId>
+			<artifactId>tml-j2ee</artifactId>
+			<version>0.2.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.struts</groupId>
